@@ -20,10 +20,10 @@ class ProvinceTableViewController: UITableViewController {
     }
     
     func loadDataFromPlist() {
-        let data = dataService.getDataTypeDictionary(nameSource: "CityAndDistrict") 
-        for (i,j) in data {
-            if nameKey == i {
-                listProvince += j
+        guard let nameKey = nameKey else {return}
+        for i in listCity {
+            if nameKey == i.name {
+                listProvince = i.districts
             }
         }
         guard let oldSelected = UserDefaults.standard.object(forKey: "selectedCell") as? String else { return }
@@ -48,12 +48,12 @@ class ProvinceTableViewController: UITableViewController {
         return listProvince.count
     }
     
-     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-     cell.textLabel?.text = listProvince[indexPath.row]
-     return cell
-     }
- 
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel?.text = listProvince[indexPath.row]
+        return cell
+    }
+    
     // MARK: Delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selected = listProvince[indexPath.row]

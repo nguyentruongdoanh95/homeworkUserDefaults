@@ -12,13 +12,36 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    // Biến lưu trữ đường dẫn
+    var path = String()
+    
+    func prepareItemFromCopyFile() {
+        // Xác định vị trí thư mục
+        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        // Tạo 1 đường dẫn mới
+        let documentDirectory = paths[0]
+        path = documentDirectory.appending("CityAndDistrict2") // Đường dẫn
+        // Check
+        let fileManager = FileManager.default
+        if (!fileManager.fileExists(atPath: path)) {
+            guard let listPathInBundle = Bundle.main.path(forResource: "CityAndDistrict", ofType: "plist") else { return }
+            do {
+                try FileManager.default.copyItem(atPath: listPathInBundle, toPath: path)
+            } catch {
+                print("Lỗi trong khi copy item")
+            }
+        }
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.prepareItemFromCopyFile() // singleton
         return true
     }
 
+ 
+
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -35,6 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        prepareItemFromCopyFile()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

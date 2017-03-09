@@ -1,36 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>HN</key>
-	<array>
-		<string>Thanh Xuân</string>
-		<string>Tây Hồ</string>
-		<string>Nam Từ Liêm</string>
-		<string>Long Biên</string>
-		<string>Hoàng Mai</string>
-		<string>Hoàn Kiếm</string>
-		<string>Hai Bà Trưng</string>
-		<string>Đống Đa</string>
-		<string>Cầu Giấy</string>
-		<string>Bắc Từ Liêm</string>
-		<string>Ba Đình</string>
-		<string>Hà Đông</string>
-	</array>
-	<key>HCM</key>
-	<array>
-		<string>Quận 1</string>
-		<string>Quận 2</string>
-		<string>Quận 3</string>
-		<string>Quận 4</string>
-		<string>Quận 5</string>
-		<string>Quận 6</string>
-		<string>Quận 7</string>
-		<string>Quận 8</string>
-		<string>Quận 9</string>
-		<string>Quận 10</string>
-		<string>Quận 11</string>
-		<string>Quận 12</string>
-	</array>
-</dict>
+<array>
+	<dict>
+		<key>name</key>
+		<string>Hồ Chí Minh</string>
+		<key>districts</key>
+		<array>
+			<string>Quận 1</string>
+			<string>Quận 2</string>
+			<string>Quận 3</string>
+			<string>Quận 4</string>
+			<string>Quận 5</string>
+			<string>Quận 6</string>
+			<string>Quận 7</string>
+			<string>Quận 8</string>
+			<string>Quận 9</string>
+			<string>Quận 10</string>
+			<string>Quận 11</string>
+			<string>Quận 12</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Hà Nội</string>
+		<key>districts</key>
+		<array>
+			<string>Thanh Xuân</string>
+			<string>Tây Hồ</string>
+			<string>Nam Từ Liêm</string>
+			<string>Long Biên</string>
+			<string>Hoàng Mai</string>
+			<string>Hoàn Kiếm</string>
+			<string>Hai Bà Trưng</string>
+			<string>Đống Đa</string>
+			<string>Cầu Giấy</string>
+			<string>Bắc Từ Liêm</string>
+			<string>Ba Đình</string>
+			<string>Hà Đông</string>
+		</array>
+	</dict>
+</array>
 </plist>

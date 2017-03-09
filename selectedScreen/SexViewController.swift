@@ -28,13 +28,16 @@ class SexViewController: UIViewController {
     
     
     func checkStateWhenLoad() {
-        let state = UserDefaults.standard.object(forKey: "tagButton") as! Int
+        guard let state = UserDefaults.standard.object(forKey: "tagButton") as? Int else { return }
         if state == 0 {
             switchImageWhenClickRadioButton(image1: UIImage(named: "checked"), image2: UIImage(named: "unchecked"), image3: UIImage(named: "unchecked"))
+            print("Lựa chọn trước đó là: Nam")
         } else if state == 1 {
             switchImageWhenClickRadioButton(image1: UIImage(named: "unchecked"), image2: UIImage(named: "checked"), image3: UIImage(named: "unchecked"))
+            print("Lựa chọn trước đó là: Nữ")
         } else {
             switchImageWhenClickRadioButton(image1: UIImage(named: "unchecked"), image2: UIImage(named: "unchecked"), image3: UIImage(named: "checked"))
+            print("Lựa chọn trước đó là: Không xác định")
         }
     }
     

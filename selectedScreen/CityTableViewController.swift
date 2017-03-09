@@ -8,21 +8,23 @@
 
 import UIKit
 
+
+var listCity = [City]()
 class CityTableViewController: UITableViewController {
     
-    var listCity = [String]()
     let dataService = DataService()
     var userDefaults: UserDefaults?
     override func viewDidLoad() {
         super.viewDidLoad()
         loadDataFromPlist()
         userDefaults = UserDefaults.standard
-       
     }
     
     
     func loadDataFromPlist() {
-        listCity = dataService.getDataTypeArray(nameSource: "City")
+        dataService.getDataFromCopyFile { (city) in
+            listCity.append(city)
+        }
         guard let oldSelected = UserDefaults.standard.object(forKey: "selected") as? String else { return }
         print("Lựa chọn trước đó là: \(oldSelected)")
     }
@@ -32,14 +34,9 @@ class CityTableViewController: UITableViewController {
         super.prepare(for: segue, sender: sender)
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         guard let controller = segue.destination as? ProvinceTableViewController else { return }
-        let seleted = listCity[indexPath.row]
+        let seleted = listCity[indexPath.row].name
         userDefaults?.set(seleted, forKey: "selected")
-        switch indexPath.row {
-        case 0:
-            controller.nameKey =  "HN"
-        default:
-            controller.nameKey = "HCM"
-        }
+        controller.nameKey = seleted
         
     }
     
@@ -60,7 +57,7 @@ class CityTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = listCity[indexPath.row]
+        cell.textLabel?.text = listCity[indexPath.row].name
         return cell
     }
     

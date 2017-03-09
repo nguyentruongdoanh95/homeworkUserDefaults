@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FFBBBB01E70C3EF0021D95B /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFBBBAF1E70C3EF0021D95B /* City.swift */; };
 		9FFD79221E6FBC010045E2A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD79211E6FBC010045E2A8 /* AppDelegate.swift */; };
 		9FFD79271E6FBC010045E2A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFD79251E6FBC010045E2A8 /* Main.storyboard */; };
 		9FFD79291E6FBC010045E2A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFD79281E6FBC010045E2A8 /* Assets.xcassets */; };
@@ -17,23 +18,22 @@
 		9FFD793A1E6FBD3D0045E2A8 /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD79391E6FBD3D0045E2A8 /* AgeViewController.swift */; };
 		9FFD79401E6FCFC70045E2A8 /* CityAndDistrict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FFD793F1E6FCFC70045E2A8 /* CityAndDistrict.plist */; };
 		9FFD79421E6FEC0B0045E2A8 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD79411E6FEC0B0045E2A8 /* DataService.swift */; };
-		9FFD79441E6FF0F90045E2A8 /* City.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FFD79431E6FF0F90045E2A8 /* City.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9FFBBBAF1E70C3EF0021D95B /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = City.swift; path = ../City.swift; sourceTree = "<group>"; };
 		9FFD791E1E6FBC010045E2A8 /* selectedScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = selectedScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFD79211E6FBC010045E2A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FFD79261E6FBC010045E2A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FFD79281E6FBC010045E2A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FFD792B1E6FBC010045E2A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FFD792D1E6FBC010045E2A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FFD79331E6FBC760045E2A8 /* ProvinceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvinceTableViewController.swift; sourceTree = "<group>"; };
-		9FFD79351E6FBCDA0045E2A8 /* CityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTableViewController.swift; sourceTree = "<group>"; };
-		9FFD79371E6FBD020045E2A8 /* SexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SexViewController.swift; sourceTree = "<group>"; };
-		9FFD79391E6FBD3D0045E2A8 /* AgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
+		9FFD79331E6FBC760045E2A8 /* ProvinceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProvinceTableViewController.swift; path = ../ProvinceTableViewController.swift; sourceTree = "<group>"; };
+		9FFD79351E6FBCDA0045E2A8 /* CityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityTableViewController.swift; path = ../CityTableViewController.swift; sourceTree = "<group>"; };
+		9FFD79371E6FBD020045E2A8 /* SexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SexViewController.swift; path = ../SexViewController.swift; sourceTree = "<group>"; };
+		9FFD79391E6FBD3D0045E2A8 /* AgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgeViewController.swift; path = ../AgeViewController.swift; sourceTree = "<group>"; };
 		9FFD793F1E6FCFC70045E2A8 /* CityAndDistrict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CityAndDistrict.plist; sourceTree = "<group>"; };
-		9FFD79411E6FEC0B0045E2A8 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
-		9FFD79431E6FF0F90045E2A8 /* City.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = City.plist; sourceTree = "<group>"; };
+		9FFD79411E6FEC0B0045E2A8 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = selectedScreen/DataService.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +47,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9FFBBBB31E70E1830021D95B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9FFD79371E6FBD020045E2A8 /* SexViewController.swift */,
+				9FFD79331E6FBC760045E2A8 /* ProvinceTableViewController.swift */,
+				9FFD79351E6FBCDA0045E2A8 /* CityTableViewController.swift */,
+				9FFD79391E6FBD3D0045E2A8 /* AgeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9FFBBBB41E70E18D0021D95B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FFBBBAF1E70C3EF0021D95B /* City.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FFBBBB51E70E19D0021D95B /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				9FFD79411E6FEC0B0045E2A8 /* DataService.swift */,
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
 		9FFD79151E6FBC010045E2A8 = {
 			isa = PBXGroup;
 			children = (
@@ -67,17 +94,14 @@
 			isa = PBXGroup;
 			children = (
 				9FFD79211E6FBC010045E2A8 /* AppDelegate.swift */,
-				9FFD79351E6FBCDA0045E2A8 /* CityTableViewController.swift */,
-				9FFD79331E6FBC760045E2A8 /* ProvinceTableViewController.swift */,
-				9FFD79411E6FEC0B0045E2A8 /* DataService.swift */,
-				9FFD79371E6FBD020045E2A8 /* SexViewController.swift */,
-				9FFD79391E6FBD3D0045E2A8 /* AgeViewController.swift */,
+				9FFBBBB51E70E19D0021D95B /* DataService */,
+				9FFBBBB41E70E18D0021D95B /* Model */,
+				9FFBBBB31E70E1830021D95B /* Controller */,
 				9FFD79251E6FBC010045E2A8 /* Main.storyboard */,
 				9FFD79281E6FBC010045E2A8 /* Assets.xcassets */,
 				9FFD792A1E6FBC010045E2A8 /* LaunchScreen.storyboard */,
 				9FFD792D1E6FBC010045E2A8 /* Info.plist */,
 				9FFD793F1E6FCFC70045E2A8 /* CityAndDistrict.plist */,
-				9FFD79431E6FF0F90045E2A8 /* City.plist */,
 			);
 			path = selectedScreen;
 			sourceTree = "<group>";
@@ -143,7 +167,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FFD792C1E6FBC010045E2A8 /* LaunchScreen.storyboard in Resources */,
-				9FFD79441E6FF0F90045E2A8 /* City.plist in Resources */,
 				9FFD79401E6FCFC70045E2A8 /* CityAndDistrict.plist in Resources */,
 				9FFD79291E6FBC010045E2A8 /* Assets.xcassets in Resources */,
 				9FFD79271E6FBC010045E2A8 /* Main.storyboard in Resources */,
@@ -163,6 +186,7 @@
 				9FFD793A1E6FBD3D0045E2A8 /* AgeViewController.swift in Sources */,
 				9FFD79221E6FBC010045E2A8 /* AppDelegate.swift in Sources */,
 				9FFD79341E6FBC760045E2A8 /* ProvinceTableViewController.swift in Sources */,
+				9FFBBBB01E70C3EF0021D95B /* City.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@ import UIKit
 class ProvinceTableViewController: UITableViewController {
     
     var listProvince = [String]()
+    var data:[City] = [City]()
     var nameKey: String?
     let dataService = DataService()
     
@@ -20,8 +21,9 @@ class ProvinceTableViewController: UITableViewController {
     }
     
     func loadDataFromPlist() {
+        data = dataService.getDataFromCopyFile()
         guard let nameKey = nameKey else {return}
-        for i in listCity {
+        for i in data {
             if nameKey == i.name {
                 listProvince = i.districts
             }

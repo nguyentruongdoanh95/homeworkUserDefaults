@@ -21,17 +21,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9FFBBBAF1E70C3EF0021D95B /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = City.swift; path = ../City.swift; sourceTree = "<group>"; };
+		9FFBBBAF1E70C3EF0021D95B /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		9FFD791E1E6FBC010045E2A8 /* selectedScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = selectedScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFD79211E6FBC010045E2A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FFD79261E6FBC010045E2A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FFD79281E6FBC010045E2A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FFD792B1E6FBC010045E2A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FFD792D1E6FBC010045E2A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FFD79331E6FBC760045E2A8 /* ProvinceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProvinceTableViewController.swift; path = ../ProvinceTableViewController.swift; sourceTree = "<group>"; };
-		9FFD79351E6FBCDA0045E2A8 /* CityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityTableViewController.swift; path = ../CityTableViewController.swift; sourceTree = "<group>"; };
-		9FFD79371E6FBD020045E2A8 /* SexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SexViewController.swift; path = ../SexViewController.swift; sourceTree = "<group>"; };
-		9FFD79391E6FBD3D0045E2A8 /* AgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgeViewController.swift; path = ../AgeViewController.swift; sourceTree = "<group>"; };
+		9FFD79331E6FBC760045E2A8 /* ProvinceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvinceTableViewController.swift; sourceTree = "<group>"; };
+		9FFD79351E6FBCDA0045E2A8 /* CityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTableViewController.swift; sourceTree = "<group>"; };
+		9FFD79371E6FBD020045E2A8 /* SexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SexViewController.swift; sourceTree = "<group>"; };
+		9FFD79391E6FBD3D0045E2A8 /* AgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
 		9FFD793F1E6FCFC70045E2A8 /* CityAndDistrict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CityAndDistrict.plist; sourceTree = "<group>"; };
 		9FFD79411E6FEC0B0045E2A8 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = selectedScreen/DataService.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -47,31 +47,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9FFBBBB31E70E1830021D95B /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				9FFD79371E6FBD020045E2A8 /* SexViewController.swift */,
-				9FFD79331E6FBC760045E2A8 /* ProvinceTableViewController.swift */,
-				9FFD79351E6FBCDA0045E2A8 /* CityTableViewController.swift */,
-				9FFD79391E6FBD3D0045E2A8 /* AgeViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		9FFBBBB41E70E18D0021D95B /* Model */ = {
+		9FFBBBBE1E70FAB80021D95B /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				9FFBBBAF1E70C3EF0021D95B /* City.swift */,
 			);
-			path = Model;
+			name = Model;
 			sourceTree = "<group>";
 		};
-		9FFBBBB51E70E19D0021D95B /* DataService */ = {
+		9FFBBBBF1E70FAC50021D95B /* DataService */ = {
 			isa = PBXGroup;
 			children = (
 				9FFD79411E6FEC0B0045E2A8 /* DataService.swift */,
 			);
-			path = DataService;
+			name = DataService;
+			sourceTree = "<group>";
+		};
+		9FFBBBC01E70FAD10021D95B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9FFD79351E6FBCDA0045E2A8 /* CityTableViewController.swift */,
+				9FFD79331E6FBC760045E2A8 /* ProvinceTableViewController.swift */,
+				9FFD79371E6FBD020045E2A8 /* SexViewController.swift */,
+				9FFD79391E6FBD3D0045E2A8 /* AgeViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		9FFD79151E6FBC010045E2A8 = {
@@ -94,9 +94,9 @@
 			isa = PBXGroup;
 			children = (
 				9FFD79211E6FBC010045E2A8 /* AppDelegate.swift */,
-				9FFBBBB51E70E19D0021D95B /* DataService */,
-				9FFBBBB41E70E18D0021D95B /* Model */,
-				9FFBBBB31E70E1830021D95B /* Controller */,
+				9FFBBBBE1E70FAB80021D95B /* Model */,
+				9FFBBBBF1E70FAC50021D95B /* DataService */,
+				9FFBBBC01E70FAD10021D95B /* Controller */,
 				9FFD79251E6FBC010045E2A8 /* Main.storyboard */,
 				9FFD79281E6FBC010045E2A8 /* Assets.xcassets */,
 				9FFD792A1E6FBC010045E2A8 /* LaunchScreen.storyboard */,

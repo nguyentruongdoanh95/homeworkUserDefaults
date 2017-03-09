@@ -9,9 +9,10 @@
 import UIKit
 
 
-var listCity = [City]()
+
 class CityTableViewController: UITableViewController {
     
+    var listCity = [City]()
     let dataService = DataService()
     var userDefaults: UserDefaults?
     override func viewDidLoad() {
@@ -22,9 +23,7 @@ class CityTableViewController: UITableViewController {
     
     
     func loadDataFromPlist() {
-        dataService.getDataFromCopyFile { (city) in
-            listCity.append(city)
-        }
+        listCity = dataService.getDataFromCopyFile()
         guard let oldSelected = UserDefaults.standard.object(forKey: "selected") as? String else { return }
         print("Lựa chọn trước đó là: \(oldSelected)")
     }
